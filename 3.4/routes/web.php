@@ -27,6 +27,7 @@ Route::get('/create', function () {
 Route::post('/create', function (MessageFormRequest $request) {
     $message = new Message(array(
         'email' => $request->get('inputEmail'),
+        'title' => $request->get('inputTitle'),
         'message' => $request->get('inputMessage')
     ));
 

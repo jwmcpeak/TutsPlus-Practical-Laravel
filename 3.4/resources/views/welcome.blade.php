@@ -8,7 +8,7 @@
 
     @foreach ($messages as $message)
         <div class="row" style="padding: 15px;">
-            <h4> {{ $message->created_at }}</h4>
+            <h4> {{ $message->title }}</h4>
             <p>{{ $message->message }}</p>
         </div>
     @endforeach
